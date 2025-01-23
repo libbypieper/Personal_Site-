@@ -27,10 +27,12 @@
 }
 
 .navbar a{
-   font-size: 20px;
+   font-size: 25px;
    color:white;
    font-weight: 500;
    text-decoration: none;
+   justify-content: space-between;
+   margin-right: 20px;
 }
 
 .Libby{
@@ -89,7 +91,7 @@ body{
    font-size: 30px;
    font-weight: 650;
    text-align: center;
-   margin: 85px;
+   margin-top: 100px;
 }
 
 .personalquote{
@@ -101,7 +103,6 @@ body{
 
 .quote{
    font-family: Times New Roman, cursive;
-   color: alice blue;
    font-size: 30px;
    font-weight: 100;
    text-shadow: 1px 1px 2px black;
@@ -113,14 +114,12 @@ body{
    font-family: Arial, Helvetica, sans-serif;
    font-size: 30px;
    font-weight: 30;
-   margin: 100px;
 }
 
 .Here{
    font-family: 'Times New Roman', Times, serif;
    font-size: 30px;
    font-weight: lighter;
-   margin: 80px;
    text-align: center;
 }
 
@@ -142,6 +141,14 @@ body{
    height: 300px;
 }
       
+.container{
+   display:flex;
+   flex-direction: column;
+   margin-top: 120px;
+   margin-bottom: 200px;
+
+}
+
 #firstproject{
    width: 300px;
    float: right;
@@ -153,8 +160,43 @@ body{
 }
 
 #thirdproject{
-   float: right;
    width: 300px;
    height: 300px;
+   float: right;
 }
 
+.Contact{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 40px;
+   font-weight: 100px;
+   margin-top: 100px;
+}
+
+footer {
+   background-color: gray;
+   height: 70px;
+   padding: 10px;
+   position: fixed;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   display: flex
+   box-shadow: 0 0 12px -2px black;
+   }
+
+.media-link {
+   width: 59px;
+   height: 59px;
+   margin-right: 55px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+   .container {
+     flex-wrap: wrap;
+   }
+   .nav {
+      flex-wrap: nowrap;
+   }
+ }
